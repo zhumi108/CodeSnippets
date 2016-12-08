@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>baseScrollView</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.baseScrollView = [[UIScrollView alloc] init];
+    self.baseScrollView.showsVerticalScrollIndicator = NO;
+    self.baseScrollView.delegate = self;
+    [self.view addSubview:self.baseScrollView];
+    
+    UIEdgeInsets padding = UIEdgeInsetsMake(0, 0, 0, 0);
+    [self.baseScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view).with.insets(padding);
+    }];
+    
+    self.container = [UIView new];
+    [self.baseScrollView addSubview:self.container];
+    [self.container mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.baseScrollView);
+        make.width.equalTo(self.baseScrollView);
+    }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>688D92F6-629D-4E87-92BB-AADB9957A84F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>baseScrollView</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

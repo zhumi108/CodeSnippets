@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>UIButton</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIButton *inviteButton = [UIButton buttonWithType:UIButtonTypeCustom];
+inviteButton.frame = CGRectMake((kScreenWidth - 160)/2, 240, 160, 30);
+[inviteButton setTitle:@"提交" forState:UIControlStateNormal];
+inviteButton.titleLabel.font = [UIFont systemFontOfSize:13];
+[inviteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+[inviteButton setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
+inviteButton.backgroundColor = ButtonBackgroundColor;
+[inviteButton addTarget:self action:@selector(inviteButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+[self.view addSubview:inviteButton];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>139EE2B3-4A5C-4203-B04E-71853D2D3C3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UIButton</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UIButton</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
